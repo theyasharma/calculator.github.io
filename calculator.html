@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: #6cff65;
+        }
+        input{
+            text-align: center;
+            justify-content: center;
+            padding: 10px;
+            margin: 10px;
+            text-transform: uppercase;
+            width: 200px;
+            display: block;
+            background-color: black;
+            color: white;
+            transition: 2s;
+        }
+        input:hover{
+            color: yellow;
+            border-radius: 45px;
+        }
+        h1{
+            text-align: center;
+            justify-content: center;
+            color:  darkgreen;
+        }
+    </style>
+</head>
+<body>
+<h1>CALCULATOR</h1>
+    <form name="cal">
+        <input type="number" name="n1" placeholder="enter first number">
+        <input type="number" name="n2" placeholder="enter second number">
+        <input type="button" name="add" value="addition" onclick="addd()">
+        <input type="button" name="sub" value="subraction" onclick="subbb()">
+        <input type="button" name="mul" value="multiplication" onclick="mull()">
+        <input type="button" name="div" value="division" onclick="divv()">
+        <input type="reset" value="clear all">
+
+    </form>
+
+
+    <script>
+        var x=0;
+        var y =0;
+        var z=0;
+
+        function addd(){
+            x =parseInt(cal.n1.value);
+            y =parseInt(cal.n2.value);
+            z=x+y;
+            alert( "answer is"+z);
+
+        }
+        function subbb(){
+            x =parseInt(cal.n1.value);
+            y =parseInt(cal.n2.value);
+            z=x-y;
+            alert( "answer is"+z);
+
+        }
+        function mull(){
+            x =parseInt(cal.n1.value);
+            y =parseInt(cal.n2.value);
+            z=x*y;
+            alert("answer is"+z);
+        }
+        function divv(){
+            x =parseInt(cal.n1.value);
+            y =parseInt(cal.n2.value);
+            z =x/y;
+            alert("answer is"+z);
+
+
+        }
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
